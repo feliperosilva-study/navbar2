@@ -2,11 +2,18 @@
     display: flex;
     background-color: #71797E;
     align-items: center;
+    padding: 10px;
+    border-radius: 3px  v;
 }
 
 .logo {
     color: white;
     text-decoration: none;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    font-size: 3.0rem;
 }
 
 .pages {
@@ -18,13 +25,21 @@
     color: white;
     margin-right: 20px;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .social {
     display: flex;
     list-style-type: none;
+    margin-left: auto;
 }
 
 .social li {
     margin-right: 20px;
 }
+
+.facebook, .twitter, .linkedin {
+    width: 40px;
+    height: 40px;
+}
+
