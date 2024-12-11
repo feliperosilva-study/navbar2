@@ -1,0 +1,30 @@
+.nav-menu {
+    display: flex;
+    background-color: #71797E;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+}
+
+.pages {
+    display: flex;
+    list-style-type: none;
+}
+
+.page-link {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    list-style-type: none;
+}
+
+.social li {
+    margin-right: 20px;
+}
