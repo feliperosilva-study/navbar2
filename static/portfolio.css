@@ -47,30 +47,13 @@ a:hover {
     font-weight: bold;
 }
 
-.button-icon {
-    display: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    margin-left: auto;
-}
-
-#toggle-icon {
-    display: none;
-}
-
 @media (max-width: 768px) {
     .nav-menu {
         display: flex;
         flex-direction: column;
     }
 
-    .button-icon {
-        display: block;
-    }
-
     .pages {
-        display: none;
         flex-direction: column;
         align-items: center;
     }
@@ -80,14 +63,7 @@ a:hover {
     }
 
     .social {
-        display: none;
         margin-left: 0px;
-    }
-
-    #toggle-icon:checked + .button-icon + .pages + .social {
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
     }
 }
 
