@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .nav-menu {
     display: flex;
     background-color: #71797E;
@@ -19,6 +24,7 @@
 .pages {
     display: flex;
     list-style-type: none;
+    margin-left: auto;
 }
 
 .page-link {
@@ -47,15 +53,32 @@ a:hover {
     font-weight: bold;
 }
 
+.button-icon {
+    display: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+#toggle-icon {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         display: flex;
         flex-direction: column;
     }
 
+    .button-icon {
+        display: block;
+    }
+
     .pages {
+        display: none;
         flex-direction: column;
-        align-items: center;
+        margin-left: 0px;
     }
 
     .pages li {
@@ -63,7 +86,15 @@ a:hover {
     }
 
     .social {
+        display: none;
         margin-left: 0px;
+    }
+
+    #toggle-icon:checked ~ .pages,
+    #toggle-icon:checked ~ .social {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
     }
 }
 

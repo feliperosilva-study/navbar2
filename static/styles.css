@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .nav-menu {
     display: flex;
     background-color: #71797E;
@@ -19,6 +24,7 @@
 .pages {
     display: flex;
     list-style-type: none;
+    margin-left: auto;
 }
 
 .page-link {
@@ -72,7 +78,7 @@ a:hover {
     .pages {
         display: none;
         flex-direction: column;
-        align-items: center;
+        margin-left: 0px;
     }
 
     .pages li {
@@ -84,7 +90,8 @@ a:hover {
         margin-left: 0px;
     }
 
-    #toggle-icon:checked + .button-icon + .pages + .social {
+    #toggle-icon:checked ~ .pages,
+    #toggle-icon:checked ~ .social {
         display: flex;
         align-items: center;
         margin-top: 10px;
